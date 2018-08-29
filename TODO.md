@@ -4,7 +4,6 @@
 
 # Bugs
   - add favicon.ico to prevent failed requests
-  - add robot.txt to prevent failed requests and disable indexing
 
 # Testing
 
