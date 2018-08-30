@@ -3,7 +3,6 @@
 # Cleaning
 
 # Bugs
-  - add favicon.ico to prevent failed requests
 
 # Testing
 
