@@ -7,7 +7,6 @@
 # Testing
 
 # Improvements
-  - minimal CSS styling for some pages
 
 # New Features
   - add specific error pages
