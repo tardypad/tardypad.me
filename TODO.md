@@ -10,7 +10,6 @@
   - more believable styling and text for some pages
 
 # New Features
-  - blocked by other parties: boss, partner,...
   - page to request email credentials
   - page to request credit card payments
   - page asking to confirm age
