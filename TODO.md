@@ -13,6 +13,8 @@
   - page to request email credentials
   - page to request credit card payments
   - page asking to confirm age
+  - confirm you're not a robot
+  - censored version with block characters
 
 # Research
   - https settings
