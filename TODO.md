@@ -15,6 +15,7 @@
   - page asking to confirm age
   - confirm you're not a robot
   - censored version with block characters
+  - check https://2018.bloomca.me/en for new ideas
 
 # Research
   - use Makefile to generate pages based on template  
