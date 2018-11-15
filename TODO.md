@@ -17,6 +17,5 @@
   - censored version with block characters
 
 # Research
-  - https settings
   - use Makefile to generate pages based on template  
     to prevent duplication of HTML code
