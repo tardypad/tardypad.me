@@ -1,1 +1,1 @@
-Yes, I'm busy
+/tmp/status_busy.txt
