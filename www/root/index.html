@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: #e3ecfe;
+            }
+            html, body, svg {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <rect id="logo-stripe" width="10" height="22"/>
+                <polygon id="logo-cross" points="0,2 2,0 5,3 8,0 10,2 7,5 10,8 8,10 5,7 2,10, 0,8 3,5"/>
+                <g id="logo-cross-stripe">
+                    <use xlink:href="#logo-cross"/>
+                    <use xlink:href="#logo-stripe" y="12"/>
+                </g>
+                <g id="logo-sign" transform="rotate(45 19 19)">
+                    <use xlink:href="#logo-cross-stripe" x="2" y="2" fill="#e0ad95"/>
+                    <use xlink:href="#logo-cross-stripe" x="14" y="2" fill="#beba89"/>
+                    <use xlink:href="#logo-cross-stripe" x="26" y="2" fill="#99bde7"/>
+                </g>
+            </defs>
+            <symbol id="logo" viewBox="0 0 68 68">
+                <rect width="100%" height="100%" fill="#e3ecfe"/>
+                <use xlink:href="#logo-sign" x="15" y="15"/>
+            </symbol>
+            <use xlink:href="#logo"/>
+        </svg>
+    </body>
+</html>
