@@ -1,13 +1,15 @@
-# Periodic
+# TODO
 
-# Cleaning
+## Periodic
 
-# Bugs
+## Cleaning
 
-# Testing
+## Bugs
 
-# Improvements
+## Testing
 
-# New Features
+## Improvements
 
-# Research
+## New Features
+
+## Research
