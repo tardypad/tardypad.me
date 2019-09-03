@@ -1,0 +1,9 @@
+#!/bin/sh
+
+STATUS_BUSY_FILE='/tmp/status_busy.txt'
+
+case "${SSH_ORIGINAL_COMMAND}" in
+  available) rm -f "${STATUS_BUSY_FILE}" ;;
+  busy\ *)   echo "${SSH_ORIGINAL_COMMAND}" | cut -c 6- > "${STATUS_BUSY_FILE}" ;;
+  *)         exit 1
+esac
