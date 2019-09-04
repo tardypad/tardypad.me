@@ -16,3 +16,12 @@ where {ssh-key} is the public SSH key
 
 The `set_status` script should then be placed within a `bin` directory in the
 home directory and made executable.
+
+Setting the status can then be done with the following commands
+```shell
+# set status as available
+ssh {host} available
+
+# set status as busy with text
+ssh {host} busy {text}
+```
