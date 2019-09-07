@@ -24,4 +24,7 @@ ssh {host} available
 
 # set status as busy with text
 ssh {host} busy {text}
+
+# set status as busy with text and ending time
+ssh {host} busy {text} until {time}
 ```

@@ -1,9 +1,21 @@
 #!/bin/sh
 
 STATUS_BUSY_FILE='/tmp/status_busy.txt'
+STATUS_BUSY_UNTIL_FILE='/tmp/status_busy_until.txt'
 
 case "${SSH_ORIGINAL_COMMAND}" in
-  available) rm -f "${STATUS_BUSY_FILE}" ;;
-  busy\ *)   echo "${SSH_ORIGINAL_COMMAND}" | cut -c 6- > "${STATUS_BUSY_FILE}" ;;
-  *)         exit 1
+  available)
+    rm -f "${STATUS_BUSY_FILE}"
+    rm -f "${STATUS_BUSY_UNTIL_FILE}"
+    ;;
+  busy\ *\ until\ *)
+    echo "${SSH_ORIGINAL_COMMAND}" | sed 's/busy \(.*\) until .*/\1/' > "${STATUS_BUSY_FILE}"
+    echo "${SSH_ORIGINAL_COMMAND}" | sed 's/busy .* until \(.*\)/\1/' > "${STATUS_BUSY_UNTIL_FILE}"
+    ;;
+  busy\ *)
+    echo "${SSH_ORIGINAL_COMMAND}" | cut -c 6- > "${STATUS_BUSY_FILE}"
+    rm -f "${STATUS_BUSY_UNTIL_FILE}"
+    ;;
+  *)
+    exit 1
 esac
