@@ -9,11 +9,17 @@ case "${SSH_ORIGINAL_COMMAND}" in
     rm -f "${STATUS_BUSY_UNTIL_FILE}"
     ;;
   busy\ *\ until\ *)
-    echo "${SSH_ORIGINAL_COMMAND}" | sed 's/busy \(.*\) until .*/\1/' > "${STATUS_BUSY_FILE}"
-    echo "${SSH_ORIGINAL_COMMAND}" | sed 's/busy .* until \(.*\)/\1/' > "${STATUS_BUSY_UNTIL_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy \(.*\) until .*/\1/' \
+      > "${STATUS_BUSY_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy .* until \(.*\)/\1/' \
+      > "${STATUS_BUSY_UNTIL_FILE}"
     ;;
   busy\ *)
-    echo "${SSH_ORIGINAL_COMMAND}" | cut -c 6- > "${STATUS_BUSY_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy \(.*\)/\1/' \
+      > "${STATUS_BUSY_FILE}"
     rm -f "${STATUS_BUSY_UNTIL_FILE}"
     ;;
   *)
