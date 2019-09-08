@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
-                background-color: #f9d082;
+                background-color: <!--# if expr="$name = /busy/" -->#f9d082<!--# else -->#a4c193<!--# endif -->;
             }
             main {
                 display: flex;
@@ -22,7 +22,8 @@
     <body>
         <main>
             <h1>
-                <!--#include file="busy_text" -->
+<!--# if expr="$name = /busy/" --><!--#include file="busy_text" --><!--# else -->Available<!--# endif -->
+<!--# if expr="$name = busy_until" --><br/>until <!--#include file="busy_until_text" --><!--# endif -->
             </h1>
         </main>
     </body>
