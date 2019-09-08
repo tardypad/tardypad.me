@@ -22,6 +22,9 @@ Setting the status can then be done with the following commands
 # set status as available
 ssh {host} available
 
+# set status as busy
+ssh {host} busy
+
 # set status as busy with ending time information
 ssh {host} busy until 14H00
 
