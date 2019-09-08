@@ -24,4 +24,10 @@ ssh {host} available
 
 # set status as busy with ending time information
 ssh {host} busy until 14H00
+
+# set status as busy with work information
+ssh {host} busy working on issue ABC-123
+
+# set status as busy with ending time and work information
+ssh {host} busy until lunch working on fixing bugs
 ```

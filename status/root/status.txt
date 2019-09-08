@@ -1,2 +1,3 @@
-<!--# if expr="$name = /busy/" -->Do not disturb<!--# else -->Available<!--# endif -->
-<!--# if expr="$name = busy_until" -->until <!--#include file="busy_until_text" --><!--# endif -->
+<!--# if expr="$busy" -->Do not disturb<!--# else -->Available<!--# endif -->
+<!--# if expr="$busy_until" -->until <!--#include file="busy_until_text" --><!--# endif -->
+<!--# if expr="$busy_working_on" -->working on <!--#include file="busy_working_on_text" --><!--# endif -->

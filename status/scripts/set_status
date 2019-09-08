@@ -2,21 +2,41 @@
 
 STATUS_BUSY_FILE='/tmp/status_busy.txt'
 STATUS_BUSY_UNTIL_FILE='/tmp/status_busy_until.txt'
+STATUS_BUSY_WORKING_ON_FILE='/tmp/status_busy_working_on.txt'
 
 case "${SSH_ORIGINAL_COMMAND}" in
   available)
     rm -f "${STATUS_BUSY_FILE}"
     rm -f "${STATUS_BUSY_UNTIL_FILE}"
+    rm -f "${STATUS_BUSY_WORKING_ON_FILE}"
+    ;;
+  busy\ until\ *\ working\ on\ *)
+    touch "${STATUS_BUSY_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy until \(.*\) working on .*/\1/' \
+      > "${STATUS_BUSY_UNTIL_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy until .* working on \(.*\)/\1/' \
+      > "${STATUS_BUSY_WORKING_ON_FILE}"
+    ;;
+  busy\ working\ on\ *)
+    touch "${STATUS_BUSY_FILE}"
+    rm -f "${STATUS_BUSY_UNTIL_FILE}"
+    printf "%s" "${SSH_ORIGINAL_COMMAND}" \
+      | sed 's/busy working on \(.*\)/\1/' \
+      > "${STATUS_BUSY_WORKING_ON_FILE}"
     ;;
   busy\ until\ *)
     touch "${STATUS_BUSY_FILE}"
     printf "%s" "${SSH_ORIGINAL_COMMAND}" \
       | sed 's/busy until \(.*\)/\1/' \
       > "${STATUS_BUSY_UNTIL_FILE}"
+    rm -f "${STATUS_BUSY_WORKING_ON_FILE}"
     ;;
   busy*)
     touch "${STATUS_BUSY_FILE}"
     rm -f "${STATUS_BUSY_UNTIL_FILE}"
+    rm -f "${STATUS_BUSY_WORKING_ON_FILE}"
     ;;
   *)
     exit 1
