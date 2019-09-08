@@ -1,8 +1,8 @@
 #!/bin/sh
 
-STATUS_BUSY_FILE='/tmp/status_busy.txt'
-STATUS_BUSY_UNTIL_FILE='/tmp/status_busy_until.txt'
-STATUS_BUSY_WORKING_ON_FILE='/tmp/status_busy_working_on.txt'
+STATUS_BUSY_FILE='/tmp/status_busy'
+STATUS_BUSY_UNTIL_FILE='/tmp/status_busy_until'
+STATUS_BUSY_WORKING_ON_FILE='/tmp/status_busy_working_on'
 
 case "${SSH_ORIGINAL_COMMAND}" in
   available)
