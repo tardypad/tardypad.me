@@ -14,6 +14,7 @@ although they are optional:
 The following MIME types are supported in the `Accept` HTTP header:
 - text/html (default if none set)
 - text/plain
+- application/json
 
 ### text/plain
 
@@ -47,6 +48,55 @@ Busy status with ending time and work information
 Do not disturb
 until lunch
 working on fixing bugs
+```
+
+### application/json
+
+The output can take one the following forms.
+
+Available status
+```json
+{
+  "status": "Available",
+  "until": null,
+  "working_on": null
+}
+```
+
+Busy status
+```json
+{
+  "status": "Do not disturb",
+  "until": null,
+  "working_on": null
+}
+```
+
+Busy status with ending time information
+```json
+{
+  "status": "Do not disturb",
+  "until": "14H00",
+  "working_on": null
+}
+```
+
+Busy status with work information
+```json
+{
+  "status": "Do not disturb",
+  "until": null,
+  "working_on": "issue ABC-123"
+}
+```
+
+Busy status with ending time and work information
+```json
+{
+  "status": "Do not disturb",
+  "until": "lunch",
+  "working_on": "fixing bugs"
+}
 ```
 
 ## Setting the status remotely
