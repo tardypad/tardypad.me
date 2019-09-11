@@ -57,6 +57,7 @@ The output can take one the following forms.
 Available status
 ```json
 {
+  "busy": false,
   "status": "Available",
   "until": null,
   "working_on": null
@@ -66,6 +67,7 @@ Available status
 Busy status
 ```json
 {
+  "busy": true,
   "status": "Do not disturb",
   "until": null,
   "working_on": null
@@ -75,6 +77,7 @@ Busy status
 Busy status with ending time information
 ```json
 {
+  "busy": true,
   "status": "Do not disturb",
   "until": "14H00",
   "working_on": null
@@ -84,6 +87,7 @@ Busy status with ending time information
 Busy status with work information
 ```json
 {
+  "busy": true,
   "status": "Do not disturb",
   "until": null,
   "working_on": "issue ABC-123"
@@ -93,6 +97,7 @@ Busy status with work information
 Busy status with ending time and work information
 ```json
 {
+  "busy": true,
   "status": "Do not disturb",
   "until": "lunch",
   "working_on": "fixing bugs"

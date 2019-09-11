@@ -1,4 +1,5 @@
 {
+  "busy":<!--# if expr="$busy" -->true<!--# else -->false<!--# endif -->,
   "status":<!--# if expr="$busy" -->"Do not disturb"<!--# else -->"Available"<!--# endif -->,
   "until":<!--# if expr="$busy_until" -->"<!--#include file="busy_until" -->"<!--# else -->null<!--# endif -->,
   "working_on":<!--# if expr="$busy_working_on" -->"<!--#include file="busy_working_on" -->"<!--# else -->null<!--# endif -->
