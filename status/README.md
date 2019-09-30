@@ -140,3 +140,8 @@ ssh {host} busy working on issue ABC-123
 # set status as busy with ending time and work information (order matters)
 ssh {host} busy until lunch working on fixing bugs
 ```
+
+__WARNING__: The whole setup of the website is meant to be used on a server
+belonging to a single person.  
+The website makes use of files located in the "/tmp" folder to set and read
+the status. Thus if there were multiple users, any of them could modify them.
