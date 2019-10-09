@@ -108,37 +108,25 @@ Busy status with ending time and work information
 
 The remote modification of the status on the server is done via SSH commands.
 
-We are using a SSH key without passphrase to be able to have it called by
-scripts in the background without user interaction.
-
-For security reasons we then use a specific SSH key only for this purpose.
-We limit its scope on the server to only be able to modify the status.
-
-In the `.ssh/authorized_key` config
-```
-restrict,command="./bin/set-status" {ssh-key}
-```
-where {ssh-key} is the public SSH key
-
 The `set-status` [script](scripts/set-status) should then be placed within a
 `bin` directory in the home directory and made executable.
 
 Setting the status can then be done with the following commands
 ```shell
 # set status as available
-ssh {host} available
+ssh {host} bin/set-status available
 
 # set status as busy
-ssh {host} busy
+ssh {host} bin/set-status busy
 
 # set status as busy with ending time information
-ssh {host} busy until 14H00
+ssh {host} bin/set-status busy until 14H00
 
 # set status as busy with work information
-ssh {host} busy working on issue ABC-123
+ssh {host} bin/set-status busy working on issue ABC-123
 
 # set status as busy with ending time and work information (order matters)
-ssh {host} busy until lunch working on fixing bugs
+ssh {host} bin/set-status busy until lunch working on fixing bugs
 ```
 
 __WARNING__: The whole setup of the website is meant to be used on a server
