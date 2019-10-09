@@ -116,11 +116,11 @@ We limit its scope on the server to only be able to modify the status.
 
 In the `.ssh/authorized_key` config
 ```
-restrict,command="./bin/set_status" {ssh-key}
+restrict,command="./bin/set-status" {ssh-key}
 ```
 where {ssh-key} is the public SSH key
 
-The `set_status` [script](scripts/set_status) should then be placed within a
+The `set-status` [script](scripts/set-status) should then be placed within a
 `bin` directory in the home directory and made executable.
 
 Setting the status can then be done with the following commands
