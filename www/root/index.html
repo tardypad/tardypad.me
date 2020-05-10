@@ -6,25 +6,47 @@
             body {
                 background-color: #e3ecfe;
                 color: #29313f;
-            }
-            html, body, svg {
-                width: 100%;
-                height: 100%;
+                font-family: sans-serif;
+                display: flex;
                 margin: 0;
+            }
+
+            main {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            svg {
                 fill: currentColor;
+                max-width: 300px;
+                max-height: 300px;
+            }
+
+            nav a {
+                color: inherit;
+                margin: 0 0.5em;
+                font-size: 1.5em;
             }
         </style>
     </head>
     <body>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="-150 -150 300 300">
-            <path d="M 0 0
-                     A 30.9017 30.9017 0 0 1 61.8034 0
-                     A 80.9017 80.9017 0 0 1 -100 0
-                     A 100 100 0 0 0 100 0
-                     A 80.9017 80.9017 0 0 0 -61.8034 0
-                     A 30.9017 30.9017 0 0 0 0 0"/>
-        </svg>
+        <main>
+            <svg version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="-150 -150 300 300">
+                <path d="M 0 0
+                         A 30.9017 30.9017 0 0 1 61.8034 0
+                         A 80.9017 80.9017 0 0 1 -100 0
+                         A 100 100 0 0 0 100 0
+                         A 80.9017 80.9017 0 0 0 -61.8034 0
+                         A 30.9017 30.9017 0 0 0 0 0"/>
+            </svg>
+            <nav>
+                <a href="https://github.com/tardypad">github</a>
+                <a href="https://git.sr.ht/~tardypad/">sourcehut</a>
+            </nav>
+        </main>
     </body>
 </html>
