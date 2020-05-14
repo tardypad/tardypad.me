@@ -1,0 +1,41 @@
+body {
+    background-color: #e3ecfe;
+    color: #29313f;
+    font-family: sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+svg {
+    fill: currentColor;
+    width: 50vmin;
+    height: 50vmin;
+    max-width: 20em;
+    max-height: 20em;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: inherit;
+    margin: 0.2em 0.5em;
+    font-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #29313f;
+        color: #e3ecfe;
+    }
+}
