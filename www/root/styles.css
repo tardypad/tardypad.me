@@ -15,6 +15,9 @@ main {
 
 svg {
     fill: currentColor;
+}
+
+main svg {
     width: 50vmin;
     height: 50vmin;
     max-width: 20em;
