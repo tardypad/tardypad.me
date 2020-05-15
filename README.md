@@ -1,3 +1,7 @@
 # *.tardypad.me
 
-My awesome personal websites
+Personal websites
+
+- pkgs: packages repository
+- status: current work status
+- www: general website
