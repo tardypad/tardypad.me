@@ -8,7 +8,10 @@ build: root/resume_content.html
 root/resume_content.html: src/resume.md
 	cmark $< > $@
 
+watch:
+	find root/ src/ -type f | entr -c make
+
 clean:
 	rm -rf build
 
-.PHONY: build clean
+.PHONY: build clean watch
