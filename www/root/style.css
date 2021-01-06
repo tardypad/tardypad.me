@@ -1,13 +1,13 @@
 body {
-    background-color: #e3ecfe;
-    color: #29313f;
+    background-color: #edf1fa;
+    color: #43474e;
     font-family: sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #29313f;
-        color: #e3ecfe;
+        color: #c7cfe1;
     }
 }
 
