@@ -2,9 +2,9 @@
 
 Personal websites
 
-- pkgs: packages repository
-- status: current work status
-- www: general website
+- [pkgs](pkgs): packages repository
+- [status](status): current work status
+- [www](www): general website
 
 ## Website repository structure
 
