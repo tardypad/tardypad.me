@@ -6,7 +6,10 @@ build: root/resume_content.html
 	ln -sf resume.html build/resume
 
 root/resume_content.html: src/resume.md
-	cmark $< > $@
+	cmark $< \
+	| sed 's|^<\([^>]*\)>\(.*\) {\(.*\)}<.*|<\1 class="\3">\2</\1>|' \
+	| sed 's/  *</</g' \
+	> $@
 
 watch:
 	find root/ src/ -type f | entr -c make

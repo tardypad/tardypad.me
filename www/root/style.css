@@ -4,13 +4,6 @@ body {
     font-family: sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #29313f;
-        color: #c7cfe1;
-    }
-}
-
 svg {
     fill: currentColor;
 }
@@ -47,4 +40,98 @@ nav {
 nav a {
     margin: 0.2em 0.5em;
     font-size: 1.5em;
+}
+
+hr {
+    border-style: none;
+    width: 50%;
+    margin-left: 0;
+    background-color: #608bb9;
+    height: 0.2em;
+}
+
+h1 {
+    margin-bottom:0;
+}
+
+h1 + .title
+{
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.company,
+.school {
+    color: #295984;
+}
+
+.title {
+    color: #1b7793;
+    font-size: 1.2em;
+}
+
+.company + ul,
+.school + ul {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.company + ul li,
+.school + ul li {
+    margin: 0.2em 0.5em;
+}
+
+.period,
+.location {
+    color: #45719e;
+}
+
+.technologies {
+    margin-bottom: 0;
+}
+
+.technologies + ul {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.technologies + ul li {
+    background-color: #dfe3ec;
+    margin: 0.2em 0.5em;
+    padding: 0.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #29313f;
+        color: #c7cfe1;
+    }
+
+    hr {
+        background-color: #799cc6;
+    }
+
+    .company,
+    .school {
+        color: #b0d3ff;
+    }
+
+    .title {
+        color: #81c3dd;
+    }
+
+    .period,
+    .location {
+        color: #99bde7;
+    }
+
+    .technologies + ul li {
+        background-color: #343c4a;
+    }
 }
