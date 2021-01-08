@@ -27,8 +27,28 @@ M2mobi text
 
 #### _Technologies_ {technologies}
 
-- PHP
-
+* Languages:
+  - PHP
+  - Bash
+  - Python
+* Environment:
+  - MariaDB
+  - InfluxDB
+  - Redis
+  - Nginx
+  - Icinga
+  - Telegraf
+  - Grafana
+  - Contentful
+* Hosting:
+  - AWS
+  - Linux (CentOS)
+  - SaltStack
+* Development:
+  - Git
+  - PHPUnit
+  - Review Board
+  - Jenkins
 
 ### [Smile Open Source Solutions](https://www.smile.eu/en) {company}
 
@@ -40,8 +60,22 @@ Smile text
 
 #### _Technologies_ {technologies}
 
-- PHP
-
+* Languages:
+  - PHP
+  - Bash
+  - Javascript
+* Framework:
+  - Magento
+* Environment:
+  - Linux (Debian)
+  - MySQL
+  - Apache
+  - Varnish
+  - Solr
+* Development:
+  - Git
+  - SVN
+  - LXC
 
 ### [B. Braun Aesculap](https://surgical-instruments.bbraun.com/) {company}
 
@@ -53,7 +87,14 @@ B. Braun text
 
 #### _Technologies_ {technologies}
 
-- C++
+* Language:
+  - C++
+* Framework:
+  - Qt
+* Database:
+  - SQLite
+* Development:
+  - SVN
 
 * * *
 

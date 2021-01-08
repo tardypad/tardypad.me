@@ -95,16 +95,28 @@ h1 + .title
 }
 
 .technologies + ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.technologies + ul li {
+    display: flex;
+    align-items: baseline;
+}
+
+.technologies + ul ul {
     padding-left: 0;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
 
-.technologies + ul li {
+.technologies + ul ul li {
     background-color: #dfe3ec;
     margin: 0.2em 0.5em;
-    padding: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
 @media (prefers-color-scheme: dark) {
