@@ -14,7 +14,10 @@ root/resume_content.html: src/resume.md
 watch:
 	find root/ src/ -type f | entr -c make
 
+deploy:
+	rsync -az --delete root/ surg:/srv/www/
+
 clean:
 	rm -rf build
 
-.PHONY: build clean watch
+.PHONY: build clean deploy watch
