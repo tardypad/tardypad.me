@@ -5,14 +5,14 @@ Software engineer {title}
 
 [damien.job@tardypad.me](mailto:damien.job@tardypad.me)
 
-***
+* * *
 
 About
 ---
 
 About text
 
-***
+* * *
 
 Professional experience
 ---
@@ -55,14 +55,14 @@ B. Braun text
 
 - C++
 
-***
+* * *
 
 Personal experience
 ---
 
 Personal experience text
 
-***
+* * *
 
 Education
 ---
@@ -75,7 +75,7 @@ Education
 Engineer's Degree ("Master" level)  
 _Engineering of information systems_
 
-***
+* * *
 
 Languages
 ---
