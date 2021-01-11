@@ -23,7 +23,31 @@ Professional experience
 - Jul. 2014 - Dec. 2020 (6.5 years) {period}
 - Amsterdam, Netherlands            {location}
 
-M2mobi text
+**Development and system administration of the backend of diverse mobile applications.**
+
+Main tasks:
+- Development of API for mobile clients (iOS, Android, Web,...)
+- Integration to third party systems for users management, push notifications,...
+- Servers setup and administration
+
+Working environment:
+- Agile using Scrum framework
+- Unit and functional testing
+- Code reviewing process
+- Continuous integration
+- DTAP approach
+
+Customers were mostly major international airports and sizable national companies:
+- Large amount of data and users
+- Remote international teams cooperation
+
+Main internal improvements contributed to:
+- Enhancements to monitoring and analytics
+- Introduction of infrastructure automation
+- Development of functional testing
+- Creation of the Digital Airport Platform
+
+Lead backend developer on few projects and intern mentorship
 
 #### _Technologies_ {technologies}
 
@@ -56,7 +80,17 @@ M2mobi text
 - Feb. 2011 - Jul. 2014 (3.5 years) {period}
 - Amsterdam, Netherlands            {location}
 
-Smile text
+**Development of diverse e-commerce websites and standalone modules using Magento**
+
+Mainly focused on the webshops back-office part:
+- Integration to third party systems for the products catalog, deliveries, payments,...
+- Custom functionalities for promotions, reports, inventories,...
+
+Customers were mostly sizable national companies:
+- Large amount of products and orders
+- Usage of both Community and Enterprise editions of Magento
+
+Main developer and primary technical support on some projects
 
 #### _Technologies_ {technologies}
 
@@ -83,7 +117,7 @@ Smile text
 - Jul. 2010 - Nov. 2010 (5 months) {period}
 - Grenoble, France                 {location}
 
-B. Braun text
+**Development of a desktop GUI to edit and validate a database of surgical instruments.**
 
 #### _Technologies_ {technologies}
 
