@@ -45,36 +45,67 @@ nav a {
 hr {
     border-style: none;
     width: 50%;
-    margin-left: 0;
-    background-color: #608bb9;
+    margin: 2.5rem 0 0.5em 0;
+    background-color: #295984;
     height: 0.2em;
 }
 
 h1 {
-    margin-bottom:0;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
 }
+
+h2 {
+    color: #295984;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
 
 h1 + .title
 {
-    font-size: 2em;
+    font-size: 1.7em;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .company,
 .school {
-    color: #295984;
+    color: #45719e;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+h2 + .company,
+h2 + .school {
+    margin-top: 1rem;
 }
 
 .title {
     color: #1b7793;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
 .summary {
     font-weight: bold;
     font-style: italic;
+    margin-top: 0.5em;
 }
 
 .company + ul,
@@ -88,16 +119,18 @@ h1 + .title
 
 .company + ul li,
 .school + ul li {
-    margin: 0.2em 0.5em;
+    margin: 0.2em 1em 0.2em 0;
 }
 
 .period,
 .location {
-    color: #45719e;
+    font-style: italic;
 }
 
 .technologies {
+    font-weight: bold;
     font-style: italic;
+    margin-top: 1em;
     margin-bottom: 0;
 }
 
@@ -120,6 +153,7 @@ h1 + .title
 }
 
 .technologies + ul ul li {
+    font-size: 0.9em;
     background-color: #dfe3ec;
     margin: 0.2em 0.5em;
     padding-left: 0.2em;
@@ -133,24 +167,23 @@ h1 + .title
     }
 
     hr {
-        background-color: #799cc6;
+        background-color: #b0d3ff;
+    }
+
+    h2 {
+        color: #b0d3ff;
     }
 
     .company,
     .school {
-        color: #b0d3ff;
+        color: #99bde7;
     }
 
     .title {
         color: #81c3dd;
     }
 
-    .period,
-    .location {
-        color: #99bde7;
-    }
-
-    .technologies + ul li {
+    .technologies + ul ul li {
         background-color: #343c4a;
     }
 }
