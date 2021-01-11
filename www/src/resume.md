@@ -23,7 +23,7 @@ Professional experience
 - Jul. 2014 - Dec. 2020 (6.5 years) {period}
 - Amsterdam, Netherlands            {location}
 
-**Development and system administration of the backend of diverse mobile applications.**
+Development and system administration of the backend of diverse mobile applications {summary}
 
 Main tasks:
 - Development of API for mobile clients (iOS, Android, Web,...)
@@ -49,7 +49,7 @@ Main internal improvements contributed to:
 
 Lead backend developer on few projects and intern mentorship
 
-#### _Technologies_ {technologies}
+#### Technologies {technologies}
 
 * Languages:
   - PHP
@@ -80,7 +80,7 @@ Lead backend developer on few projects and intern mentorship
 - Feb. 2011 - Jul. 2014 (3.5 years) {period}
 - Amsterdam, Netherlands            {location}
 
-**Development of diverse e-commerce websites and standalone modules using Magento**
+Development of diverse e-commerce websites and standalone modules using Magento {summary}
 
 Mainly focused on the webshops back-office part:
 - Integration to third party systems for the products catalog, deliveries, payments,...
@@ -92,7 +92,7 @@ Customers were mostly sizable national companies:
 
 Main developer and primary technical support on some projects
 
-#### _Technologies_ {technologies}
+#### Technologies {technologies}
 
 * Languages:
   - PHP
@@ -117,9 +117,9 @@ Main developer and primary technical support on some projects
 - Jul. 2010 - Nov. 2010 (5 months) {period}
 - Grenoble, France                 {location}
 
-**Development of a desktop GUI to edit and validate a database of surgical instruments.**
+Development of a desktop GUI to edit and validate a database of surgical instruments {summary}
 
-#### _Technologies_ {technologies}
+#### Technologies {technologies}
 
 * Language:
   - C++
@@ -147,8 +147,8 @@ Education
 - 2009 - 2011      {period}
 - Grenoble, France {location}
 
-Engineer's Degree ("Master" level)  
-_Engineering of information systems_
+**Engineer**'s Degree (_Master_ level)  
+Engineering of information systems
 
 * * *
 

@@ -69,6 +69,12 @@ h1 + .title
 .title {
     color: #1b7793;
     font-size: 1.2em;
+    font-weight: bold;
+}
+
+.summary {
+    font-weight: bold;
+    font-style: italic;
 }
 
 .company + ul,
@@ -91,6 +97,7 @@ h1 + .title
 }
 
 .technologies {
+    font-style: italic;
     margin-bottom: 0;
 }
 
