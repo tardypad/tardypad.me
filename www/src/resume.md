@@ -135,7 +135,13 @@ Development of a desktop GUI to edit and validate a database of surgical instrum
 Personal experience
 ---
 
-Personal experience text
+I have as well experience in other diverse domains and languages through personal projects and contributions:
+- mobile apps on SailfishOS using C++, Qt and QML
+- productivity tools using shell scripts, C, Python or Go
+
+You can find all those projects on the following platforms:
+- [https://github.com/tardypad](https://github.com/tardypad)
+- [https://sr.ht/~tardypad](https://sr.ht/~tardypad)
 
 * * *
 
