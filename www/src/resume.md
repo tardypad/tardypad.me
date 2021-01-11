@@ -5,14 +5,12 @@ Software engineer {title}
 
 [damien.job@tardypad.me](mailto:damien.job@tardypad.me)
 
-* * *
 
 About
 ---
 
 About text
 
-* * *
 
 Professional experience
 ---
@@ -130,7 +128,6 @@ Development of a desktop GUI to edit and validate a database of surgical instrum
 * Development:
   - SVN
 
-* * *
 
 Personal experience
 ---
@@ -143,7 +140,6 @@ You can find all those projects on the following platforms:
 - [https://github.com/tardypad](https://github.com/tardypad)
 - [https://sr.ht/~tardypad](https://sr.ht/~tardypad)
 
-* * *
 
 Education
 ---
@@ -156,7 +152,6 @@ Education
 **Engineer**'s Degree (_Master_ level)  
 Engineering of information systems
 
-* * *
 
 Languages
 ---
