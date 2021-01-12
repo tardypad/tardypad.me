@@ -8,7 +8,7 @@ build: root/resume_content.html
 root/resume_content.html: src/resume.md
 	cmark $< \
 	| sed 's|^<\([^>]*\)>\(.*\) {\(.*\)}<.*|<\1 class="\3">\2</\1>|' \
-	| sed 's/  *</</g' \
+	| sed 's|  *</|</|g' \
 	> $@
 
 watch:
