@@ -9,7 +9,15 @@ Software engineer {title}
 About
 ---
 
-About text
+My main qualities as software developer:
+- **Quality driven**: meticulous and rigorous
+- **Agile minded** with Lean principles
+- **Generalist** more than Specialist
+
+My main values in software and also beyond:
+- **Simplicity**: requirement to achieve goals of robustness, reliability, stability and security
+- **Transparency**: free software ethic and open source methodology to build trust
+- **Efficiency**: minimalism of features, no waste of resources
 
 
 Professional experience
