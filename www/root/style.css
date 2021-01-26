@@ -175,3 +175,13 @@ h2 + .school {
         background-color: #343c4a;
     }
 }
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .technologies + ul ul li {
+        background-color: #edf1fa;
+    }
+}
