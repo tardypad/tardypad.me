@@ -1,3 +1,8 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: #edf1fa;
     color: #43474e;
@@ -177,6 +182,10 @@ h2 + .school {
 }
 
 @media print {
+    html {
+        justify-content: left;
+    }
+
     body {
         background-color: white;
     }
