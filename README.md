@@ -2,6 +2,7 @@
 
 Personal websites
 
+- [files](files): files sharing
 - [pkgs](pkgs): packages repository
 - [status](status): current work status
 - [www](www): general website
