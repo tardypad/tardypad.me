@@ -25,7 +25,7 @@ Professional experience
 
 ### [M2mobi](https://www.m2mobi.com/en) {company}
 
-- Mobile backend engineer           {title}
+- Mobile backend DevOps engineer    {title}
 - Jul. 2014 - Dec. 2020 (6.5 years) {period}
 - Amsterdam, Netherlands            {location}
 
