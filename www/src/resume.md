@@ -23,6 +23,12 @@ My main values in software and also beyond:
 Professional experience
 ---
 
+### [Leaseweb](https://www.leaseweb.com/) {company}
+
+- Bare metal automation engineer    {title}
+- May. 2021 - current               {period}
+- Amsterdam, Netherlands            {location}
+
 ### [M2mobi](https://www.m2mobi.com/en) {company}
 
 - Mobile backend DevOps engineer    {title}
