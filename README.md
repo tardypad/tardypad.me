@@ -13,7 +13,8 @@ We list here info common to all websites, extra details are explained in each we
 
 Nginx is used as a web server
 (version [1.18.0](http://hg.nginx.org/nginx/rev/release-1.18.0)).  
-The vhost configuration for each website is found in the `nginx` folder.
+The main config is found in the `nginx.conf` file.
+Each website's configuration is found in its `nginx` folder.
 
 The `root` folder contain the files to be put in their respective
 `/srv/{website}/` folder on the server.
