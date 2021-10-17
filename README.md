@@ -12,14 +12,14 @@ We list here info common to all websites, extra details are explained in each we
 ## Web server
 
 Nginx is used as a web server
-(version [1.18.0](http://hg.nginx.org/nginx/rev/release-1.18.0)).  
+(version [1.20.1](http://hg.nginx.org/nginx/rev/release-1.20.1)).  
 
 The main config is found in the `nginx` folder.
 
 ## Sites repository structure
 
-The `root` folder contain the files to be put in their respective
-`/srv/{website}/` folder on the server.
+The `root` folder contain the files to be put in their respective document root
+folder `/usr/local/www/{website}/` on the server.
 
 ## Setup
 

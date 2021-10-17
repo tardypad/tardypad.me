@@ -15,7 +15,7 @@ watch:
 	find root/ src/ -type f | entr -c make
 
 deploy:
-	rsync -az --delete root/ surg:/srv/www/
+	rsync -az --delete root/ surg:/usr/local/www/www/
 
 clean:
 	rm -rf build

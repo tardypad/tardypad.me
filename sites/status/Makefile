@@ -1,4 +1,4 @@
 deploy:
-	rsync -az --delete root/ surg:/srv/status/
+	rsync -az --delete root/ surg:/usr/local/www/status/
 
 .PHONY: deploy
