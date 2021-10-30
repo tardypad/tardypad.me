@@ -2,6 +2,7 @@
 
 Personal websites
 
+- check: checklists
 - files: files sharing
 - pkgs: packages repository
 - status: current work status
