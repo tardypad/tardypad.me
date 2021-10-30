@@ -6,11 +6,20 @@ body {
     margin: 0;
 }
 
+a {
+    color: inherit;
+}
+
 main {
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 input[type="checkbox"]:checked + label {
