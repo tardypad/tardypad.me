@@ -22,9 +22,23 @@ nav {
     flex-direction: column;
 }
 
+nav a {
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: #9a9ea7;
+}
+
+label {
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+div div {
+    margin: 0.5em;
 }
 
 @media (prefers-color-scheme: dark) {
