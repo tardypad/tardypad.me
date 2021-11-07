@@ -27,6 +27,15 @@ nav a {
     font-size: 1.5em;
 }
 
+input[type="checkbox"], label {
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: #9a9ea7;
