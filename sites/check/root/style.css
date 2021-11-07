@@ -32,8 +32,18 @@ input[type="checkbox"], label {
 }
 
 input[type="checkbox"] {
+    appearance: none;
+    display: inline-block;
     width: 1.5em;
     height: 1.5em;
+    border: 2px solid #43474e;
+    padding: 2px;
+}
+
+input[type="checkbox"]:checked {
+    border-color: #9a9ea7;
+    background-color: #9a9ea7;
+    background-clip: content-box;
 }
 
 input[type="checkbox"]:checked + label {
@@ -54,6 +64,15 @@ div div {
     body {
         background-color: #29313f;
         color: #c7cfe1;
+    }
+
+    input[type="checkbox"] {
+        border-color: #c7cfe1;
+    }
+
+    input[type="checkbox"]:checked {
+        border-color: #687080;
+        background-color: #687080;
     }
 
     input[type="checkbox"]:checked + label {
