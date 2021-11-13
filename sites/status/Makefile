@@ -1,5 +1,5 @@
 deploy:
-	rsync -az --delete root/ surg:/usr/local/www/status/
-	rsync -az scripts/ surg:~/bin/
+	rsync -az --delete root/ chestnut:/usr/local/www/status/
+	rsync -az scripts/ chestnut:~/bin/
 
 .PHONY: deploy
