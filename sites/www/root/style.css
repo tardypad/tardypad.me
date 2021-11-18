@@ -15,6 +15,13 @@ svg {
 
 a {
     color: inherit;
+    padding: 0 0.2em;
+}
+
+:focus {
+    outline: none;
+    background-color: #756599;
+    color: #edf1fa;
 }
 
 body.index {
@@ -72,6 +79,10 @@ p {
     margin-bottom: 0;
 }
 
+details > summary {
+    padding: 0 0.2em;
+    width: 5em;
+}
 
 h1 + .title
 {
@@ -166,6 +177,11 @@ h2 + .school {
 
     h2 {
         color: #b0d3ff;
+    }
+
+    :focus {
+        background-color: #c1b2e2;
+        color: #29313f;
     }
 
     .company,
