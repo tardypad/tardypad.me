@@ -9,6 +9,13 @@ body {
 
 a {
     color: inherit;
+    padding: 0 0.2em;
+}
+
+a:focus {
+    outline: none;
+    background-color: #756599;
+    color: #edf1fa;
 }
 
 main {
@@ -56,12 +63,12 @@ input[type="checkbox"]:focus:checked + label {
 }
 
 input[type="checkbox"]:focus {
-    outline: #45719e solid 4px;
-    border-color: #45719e;
+    outline: #756599 solid 4px;
+    border-color: #756599;
 }
 
 input[type="checkbox"]:focus + label {
-    color: #45719e;
+    color: #756599;
 }
 
 label {
@@ -76,6 +83,11 @@ div div {
     body {
         background-color: #29313f;
         color: #c7cfe1;
+    }
+
+    a:focus {
+        background-color: #c1b2e2;
+        color: #29313f;
     }
 
     input[type="checkbox"] {
@@ -93,11 +105,11 @@ div div {
     }
 
     input[type="checkbox"]:focus {
-        outline-color: #99bde7;
-        border-color: #99bde7;
+        outline-color: #c1b2e2;
+        border-color: #c1b2e2;
     }
 
     input[type="checkbox"]:focus + label {
-        color: #99bde7;
+        color: #c1b2e2;
     }
 }
