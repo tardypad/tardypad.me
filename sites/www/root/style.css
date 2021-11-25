@@ -91,8 +91,7 @@ h1 + .title
     margin-bottom: 0;
 }
 
-.company,
-.school {
+h3 {
     color: #45719e;
     font-size: 1.2em;
     font-weight: bold;
@@ -100,8 +99,7 @@ h1 + .title
     margin-bottom: 0;
 }
 
-h2 + .company,
-h2 + .school {
+h2 + h3 {
     margin-top: 1rem;
 }
 
@@ -111,8 +109,7 @@ h2 + .school {
     font-weight: bold;
 }
 
-.company + ul,
-.school + ul {
+h3 + ul {
     padding-left: 0;
     display: flex;
     list-style: none;
@@ -120,8 +117,7 @@ h2 + .school {
     align-items: baseline;
 }
 
-.company + ul li,
-.school + ul li {
+h3 + ul li {
     margin: 0.2em 1em 0.2em 0;
 }
 
@@ -178,8 +174,7 @@ h2 + .school {
         color: #29313f;
     }
 
-    .company,
-    .school {
+    h3 {
         color: #99bde7;
     }
 
