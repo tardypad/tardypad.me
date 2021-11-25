@@ -64,9 +64,17 @@ h1 {
 
 h2 {
     color: #295984;
-    font-size: 1.5em;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+    color: #45719e;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -84,6 +92,24 @@ details > summary {
     width: fit-content;
 }
 
+h2 + h3 {
+    margin-top: 1rem;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: flex-end;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.title {
+    color: #1b7793;
+    font-weight: bold;
+}
+
 h1 + .title
 {
     font-size: 1.7em;
@@ -91,39 +117,8 @@ h1 + .title
     margin-bottom: 0;
 }
 
-h3 {
-    color: #45719e;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-h2 + h3 {
-    margin-top: 1rem;
-}
-
-.title {
-    color: #1b7793;
+section .title {
     font-size: 1.1em;
-    font-weight: bold;
-}
-
-h3 + ul {
-    padding-left: 0;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-
-h3 + ul li {
-    margin: 0.2em 1em 0.2em 0;
-}
-
-.period,
-.location {
-    font-style: italic;
 }
 
 .technologies {
