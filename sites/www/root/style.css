@@ -59,20 +59,20 @@ h1 {
     margin-top: 0.5em;
     margin-bottom: 0;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h2 {
     color: #295984;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h3 {
     color: #45719e;
     margin-bottom: 0;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 section {
@@ -112,7 +112,6 @@ header div {
 
 .title {
     color: #1b7793;
-    font-weight: bold;
 }
 
 h1 + .title
