@@ -64,18 +64,27 @@ h1 {
 
 h2 {
     color: #295984;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 h3 {
     color: #45719e;
-    margin-top: 2rem;
     margin-bottom: 0;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+section {
+    margin: 3em 0;
+}
+
+section section {
+    margin: 1.5em 0;
+}
+
+address {
+    margin-top: 1em;
 }
 
 ul {
@@ -90,10 +99,6 @@ p {
 details > summary {
     padding: 0 0.2em;
     width: fit-content;
-}
-
-h2 + h3 {
-    margin-top: 1rem;
 }
 
 header div {
@@ -113,8 +118,6 @@ header div {
 h1 + .title
 {
     font-size: 1.7em;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 section .title {
