@@ -101,6 +101,12 @@ details > summary {
     width: fit-content;
 }
 
+header > span,
+section > p,
+details {
+    margin-left: 0.2em;
+}
+
 header div {
     display: flex;
     flex-direction: column;
