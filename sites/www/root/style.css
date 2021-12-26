@@ -101,10 +101,10 @@ details > summary {
     width: fit-content;
 }
 
-header > span,
-header div,
+section header > span,
+section header div,
 section > p,
-details {
+section details {
     margin-left: 0.2em;
 }
 
