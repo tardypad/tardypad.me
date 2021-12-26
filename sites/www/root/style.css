@@ -102,18 +102,21 @@ details > summary {
 }
 
 header > span,
+header div,
 section > p,
 details {
     margin-left: 0.2em;
 }
 
 header div {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    align-items: flex-end;
     font-size: 0.9em;
     font-style: italic;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+header div span {
+    margin-right: 1em;
 }
 
 .title {
