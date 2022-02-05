@@ -4,9 +4,9 @@ Personal websites
 
 - check: checklists
 - files: files sharing
+- main: general website
 - pkgs: packages repository
 - status: current work status
-- www: general website
 
 We list here info common to all websites, extra details are explained in each website README.
 
