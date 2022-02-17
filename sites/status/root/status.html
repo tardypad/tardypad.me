@@ -7,12 +7,9 @@
         <style>
             body {
                 background-color: <!--# if expr="$busy" -->#f9d082<!--# else -->#a4c193<!--# endif -->;
-            }
-            main {
                 display: flex;
-                justify-content: center;
-                align-content: center;
-                height: 100%;
+                margin: 0;
+                height: 100vh;
             }
             h1 {
                 text-align: center;
@@ -22,12 +19,10 @@
         </style>
     </head>
     <body>
-        <main>
-            <h1>
+        <h1>
 <!--# if expr="$busy" -->Do not disturb<!--# else -->Available<!--# endif -->
 <!--# if expr="$busy_until" --><br/>until <!--#include file="busy_until" --><!--# endif -->
 <!--# if expr="$busy_working_on" --><br/>working on <!--#include file="busy_working_on" --><!--# endif -->
-            </h1>
-        </main>
+        </h1>
     </body>
 </html>
