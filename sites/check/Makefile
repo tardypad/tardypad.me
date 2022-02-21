@@ -15,7 +15,7 @@ build:
 	sed -e '/{LINKS}/ {r build/links' -e 'd }' templates/index.html > root/index.html
 
 deploy:
-	rsync -az --delete root/ chestnut:/srv/check/
+	rsync -az --delete root/ chestnut:/srv/http/check/
 
 clean:
 	rm -rf build

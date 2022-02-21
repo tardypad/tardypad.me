@@ -20,7 +20,7 @@ The main config is found in the `nginx` folder.
 ## Sites repository structure
 
 The `root` folder contain the files to be put in their respective document root
-folder `/srv/{website}/` on the server.
+folder `/srv/http/{website}/` on the server.
 
 ## Setup
 

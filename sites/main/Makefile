@@ -18,7 +18,7 @@ watch:
 	find root/ src/ -type f | entr -c make
 
 deploy:
-	rsync -az --delete root/ chestnut:/srv/main/
+	rsync -az --delete root/ chestnut:/srv/http/main/
 
 clean:
 	rm -rf build
