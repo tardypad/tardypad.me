@@ -14,6 +14,12 @@ build:
 	cp root/style.css build/
 	ln -sf resume.html build/resume
 
+install:
+	mkdir -p $(DESTDIR)/srv/http/main
+	cp -r root/* $(DESTDIR)/srv/http/main
+	mkdir -p $(DESTDIR)/etc/nginx/http.d
+	cp nginx.conf $(DESTDIR)/etc/nginx/http.d/main.conf
+
 watch:
 	find root/ src/ -type f | entr -c make
 
@@ -23,4 +29,4 @@ deploy:
 clean:
 	rm -rf build
 
-.PHONY: build clean deploy watch
+.PHONY: build clean deploy install watch
