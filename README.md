@@ -15,7 +15,7 @@ We list here info common to all websites, extra details are explained in each we
 Nginx is used as a web server
 (version [1.20.2](http://hg.nginx.org/nginx/rev/release-1.20.2)).
 
-The main config is found in the `nginx` folder.
+Each website specific config is found in its nginx.conf file
 
 ## Sites repository structure
 

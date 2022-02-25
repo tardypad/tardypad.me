@@ -1,6 +1,6 @@
 deploy:
-	cd sites/check && make deploy
-	cd sites/main && make deploy
-	cd sites/status && make deploy
+	cd check && make deploy
+	cd main && make deploy
+	cd status && make deploy
 
 .PHONY: deploy
