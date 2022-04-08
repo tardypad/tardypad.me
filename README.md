@@ -2,6 +2,7 @@
 
 Personal websites
 
+- carl: CardDAV/CalDAV server (reverse proxy)
 - check: checklists
 - files: files sharing
 - main: general website

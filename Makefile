@@ -1,4 +1,5 @@
 install:
+	+@cd carl && make HTPASSWD="$(HTPASSWD_CARL)" install
 	+@cd check && make install
 	+@cd files && make HTPASSWD="$(HTPASSWD_FILES)" install
 	+@cd main && make install
