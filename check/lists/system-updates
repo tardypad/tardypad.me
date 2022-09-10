@@ -1,9 +1,9 @@
 # System updates
-Update Raspberry Pi
-Sync community Arch packages
-Sync personal Arch packages
-Update laptop
-Sync personal Alpine packages
-Update server
-Clean laptop
-Clean personal repos
+Laptop: sync community packages
+Laptop: sync personal packages
+Laptop: update
+Laptop: clean
+Server: sync personal packages
+Server: update
+Server: clean repos
+Raspberry Pi: update
