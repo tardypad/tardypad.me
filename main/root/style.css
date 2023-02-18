@@ -213,4 +213,10 @@ section .title {
     .technologies + ul ul li {
         background-color: #edf1fa;
     }
+
+    .projects a::after {
+        content: ": " attr(href);
+        display: inline-block;
+        text-decoration: none;
+    }
 }
