@@ -204,10 +204,16 @@ section .title {
 
     body {
         background-color: white;
+        width: 100%;
     }
 
     .website {
         display: block;
+        float: right;
+        text-align: right;
+        font-style: italic;
+        border-right: solid 2px #1b7793;
+        padding-right: 10px;
     }
 
     .technologies + ul ul li {
