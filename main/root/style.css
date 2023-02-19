@@ -69,14 +69,14 @@ h1 {
 h2 {
     color: #295984;
     font-size: 1.5em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h3 {
     color: #45719e;
     margin-bottom: 0;
     font-size: 1.2em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 section {
