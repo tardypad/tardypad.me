@@ -103,6 +103,8 @@ p {
 details > summary {
     padding: 0 0.2em;
     width: fit-content;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 section header > span,
