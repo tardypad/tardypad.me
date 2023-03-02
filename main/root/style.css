@@ -209,6 +209,11 @@ section .title {
         width: 100%;
     }
 
+    a,
+    details > summary {
+        text-decoration: none;
+    }
+
     .website {
         display: block;
         float: right;
