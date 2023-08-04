@@ -10,6 +10,7 @@ build:
 		-e '/resume_smile.html/ {r root/includes/resume_smile.html' -e 'd }' \
 		-e '/resume_m2mobi.html/ {r root/includes/resume_m2mobi.html' -e 'd }' \
 		-e '/resume_leaseweb.html/ {r root/includes/resume_leaseweb.html' -e 'd }' \
+		-e '/resume_crisp.html/ {r root/includes/resume_crisp.html' -e 'd }' \
 		root/resume.html > build/resume.html
 	cp root/style.css build/
 	ln -sf resume.html build/resume
