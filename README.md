@@ -14,7 +14,7 @@ We list here info common to all websites, extra details are explained in each we
 ## Web server
 
 Nginx is used as a web server
-(version [1.22.1](http://hg.nginx.org/nginx/rev/release-1.22.1)).
+(version [1.24.0](http://hg.nginx.org/nginx/rev/release-1.24.0)).
 
 Each website specific config is found in its nginx.conf file
 
