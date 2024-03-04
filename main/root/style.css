@@ -209,6 +209,18 @@ section .title {
         width: 100%;
     }
 
+    header,
+    ul {
+        break-inside: avoid;
+    }
+
+    h2, h3, h4,
+    header,
+    details > summary,
+    p:has(+ul) {
+        break-after: avoid;
+    }
+
     a,
     details > summary {
         text-decoration: none;
