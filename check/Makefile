@@ -16,12 +16,12 @@ build:
 
 install:
 	mkdir -p $(DESTDIR)/srv/http/check
-	cp -r root/* $(DESTDIR)/srv/http/check
+	cp -rL root/* $(DESTDIR)/srv/http/check
 	mkdir -p $(DESTDIR)/etc/nginx/http.d
 	cp nginx.conf $(DESTDIR)/etc/nginx/http.d/check.conf
 
 deploy:
-	rsync -az --delete root/ chestnut:/srv/http/check/
+	rsync -azL --delete root/ chestnut:/srv/http/check/
 
 clean:
 	rm -rf build

@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    background-color: #f2f7fc;
-    color: #34373b;
+    background-color: var(--light-background);
+    color: var(--light-foreground);
     font-family: sans-serif;
 }
 
@@ -24,8 +24,8 @@ a {
 
 :focus {
     outline: none;
-    background-color: #756599;
-    color: #f2f7fc;
+    background-color: var(--light-base07);
+    color: var(--light-background);
 }
 
 body.index {
@@ -67,13 +67,13 @@ h1 {
 }
 
 h2 {
-    color: #295984;
+    color: var(--light-base0A);
     font-size: 1.5em;
     font-weight: bold;
 }
 
 h3 {
-    color: #45719e;
+    color: var(--light-base09);
     margin-bottom: 0;
     font-size: 1.2em;
     font-weight: bold;
@@ -126,7 +126,7 @@ header div span {
 }
 
 .title {
-    color: #1b7793;
+    color: var(--light-base0B);
 }
 
 h1 + .title
@@ -165,7 +165,7 @@ section .title {
 
 .technologies + ul ul li {
     font-size: 0.9em;
-    background-color: #e4e9ed;
+    background-color: var(--light-base01);
     margin: 0.2em 0.5em;
     padding-left: 0.2em;
     padding-right: 0.2em;
@@ -173,29 +173,29 @@ section .title {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121d25;
-        color: #c8d3e0;
+        background-color: var(--dark-background);
+        color: var(--dark-foreground);
     }
 
     h2 {
-        color: #b0d3ff;
+        color: var(--dark-base0A);
     }
 
     :focus {
-        background-color: #c1b2e2;
-        color: #121d25;
+        background-color: var(--dark-base07);
+        color: var(--dark-background);
     }
 
     h3 {
-        color: #99bde7;
+        color: var(--dark-base09);
     }
 
     .title {
-        color: #81c3dd;
+        color: var(--dark-base0B);
     }
 
     .technologies + ul ul li {
-        background-color: #1c2730;
+        background-color: var(--dark-base01);
     }
 }
 
@@ -231,12 +231,12 @@ section .title {
         float: right;
         text-align: right;
         font-style: italic;
-        border-right: solid 2px #1b7793;
+        border-right: solid 2px var(--light-base0B);
         padding-right: 10px;
     }
 
     .technologies + ul ul li {
-        background-color: #f2f7fc;
+        background-color: var(--light-background);
     }
 
     .projects a::after {

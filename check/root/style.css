@@ -1,6 +1,6 @@
 body {
-    background-color: #f2f7fc;
-    color: #34373b;
+    background-color: var(--light-background);
+    color: var(--light-foreground);
     font-family: sans-serif;
     display: flex;
     margin: 0;
@@ -14,8 +14,8 @@ a {
 
 a:focus {
     outline: none;
-    background-color: #756599;
-    color: #f2f7fc;
+    background-color: var(--light-base07);
+    color: var(--light-background);
 }
 
 main {
@@ -44,31 +44,31 @@ input[type="checkbox"] {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
-    border: 2px solid #34373b;
+    border: 2px solid var(--light-foreground);
     padding: 2px;
     outline-offset: 0;
     margin-right: 1em;
 }
 
 input[type="checkbox"]:checked {
-    border-color: #9fa4a8;
-    background-color: #9fa4a8;
+    border-color: var(--light-base03);
+    background-color: var(--light-base03);
     background-clip: content-box;
 }
 
 input[type="checkbox"]:checked + label,
 input[type="checkbox"]:focus:checked + label {
     text-decoration: line-through;
-    color: #9fa4a8;
+    color: var(--light-base03);
 }
 
 input[type="checkbox"]:focus {
-    outline: #756599 solid 4px;
-    border-color: #756599;
+    outline: var(--light-base07) solid 4px;
+    border-color: var(--light-base07);
 }
 
 input[type="checkbox"]:focus + label {
-    color: #756599;
+    color: var(--light-base07);
 }
 
 label {
@@ -81,35 +81,35 @@ div div {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121d25;
-        color: #c8d3e0;
+        background-color: var(--dark-background);
+        color: var(--dark-foreground);
     }
 
     a:focus {
-        background-color: #c1b2e2;
-        color: #121d25;
+        background-color: var(--dark-base07);
+        color: var(--dark-background);
     }
 
     input[type="checkbox"] {
-        border-color: #c8d3e0;
+        border-color: var(--dark-foreground);
     }
 
     input[type="checkbox"]:checked {
-        border-color: #4d5963;
-        background-color: #4d5963;
+        border-color: var(--dark-base03);
+        background-color: var(--dark-base03);
     }
 
     input[type="checkbox"]:checked + label,
     input[type="checkbox"]:focus:checked + label {
-        color: #4d5963;
+        color: var(--dark-base03);
     }
 
     input[type="checkbox"]:focus {
-        outline-color: #c1b2e2;
-        border-color: #c1b2e2;
+        outline-color: var(--dark-base07);
+        border-color: var(--dark-base07);
     }
 
     input[type="checkbox"]:focus + label {
-        color: #c1b2e2;
+        color: var(--dark-base07);
     }
 }

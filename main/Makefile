@@ -12,12 +12,12 @@ build:
 		-e '/resume_leaseweb.html/ {r root/includes/resume_leaseweb.html' -e 'd }' \
 		-e '/resume_crisp.html/ {r root/includes/resume_crisp.html' -e 'd }' \
 		root/resume.html > build/resume.html
-	cp root/style.css build/
+	cp root/colors.css root/style.css build/
 	ln -sf resume.html build/resume
 
 install:
 	mkdir -p $(DESTDIR)/srv/http/main
-	cp -r root/* $(DESTDIR)/srv/http/main
+	cp -rL root/* $(DESTDIR)/srv/http/main
 	mkdir -p $(DESTDIR)/etc/nginx/http.d
 	cp nginx.conf $(DESTDIR)/etc/nginx/http.d/main.conf
 
@@ -25,7 +25,7 @@ watch:
 	find root/ src/ -type f | entr -c make
 
 deploy:
-	rsync -az --delete root/ chestnut:/srv/http/main/
+	rsync -azL --delete root/ chestnut:/srv/http/main/
 
 clean:
 	rm -rf build
