@@ -7,6 +7,7 @@ Personal websites
 - files: files sharing
 - main: general website
 - pkgs: packages repositories
+- social: ActivityPub social network server (reverse proxy)
 - status: current work status
 
 We list here info common to all websites, extra details are explained in each website README.
