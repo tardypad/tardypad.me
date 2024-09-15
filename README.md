@@ -15,7 +15,7 @@ We list here info common to all websites, extra details are explained in each we
 ## Web server
 
 Nginx is used as a web server
-(version [1.24.0](http://hg.nginx.org/nginx/rev/release-1.24.0)).
+(version [1.26.2](http://hg.nginx.org/nginx/rev/release-1.26.2)).
 
 Each website specific config is found in its nginx.conf file
 
@@ -27,7 +27,7 @@ folder `/srv/http/{website}/` on the server.
 ## Setup
 
 Dependencies:
-- `rsync` (currently using version [3.2.7](https://git.samba.org/?p=rsync.git;a=tag;h=refs/tags/v3.2.7))
+- `rsync`
 
 ```shell
 # Deploy files to server
