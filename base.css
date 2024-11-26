@@ -41,3 +41,33 @@
     --dark-background: var(--dark-base00);
     --dark-foreground: var(--dark-base04);
 }
+
+body {
+    background-color: var(--light-background);
+    color: var(--light-foreground);
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus,
+summary:focus {
+    outline: none;
+    background-color: var(--light-base07);
+    color: var(--light-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-background);
+        color: var(--dark-foreground);
+    }
+
+    a:focus,
+    summary:focus {
+        background-color: var(--dark-base07);
+        color: var(--dark-background);
+    }
+}

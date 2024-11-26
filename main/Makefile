@@ -12,7 +12,7 @@ build:
 		-e '/resume_leaseweb.html/ {r root/includes/resume_leaseweb.html' -e 'd }' \
 		-e '/resume_crisp.html/ {r root/includes/resume_crisp.html' -e 'd }' \
 		root/resume.html > build/resume.html
-	cp root/colors.css root/style.css build/
+	cp root/base.css root/style.css build/
 	ln -sf resume.html build/resume
 
 install:

@@ -3,29 +3,16 @@ html {
     justify-content: center;
 }
 
-body {
-    background-color: var(--light-background);
-    color: var(--light-foreground);
-    font-family: sans-serif;
-}
-
 svg {
     fill: currentColor;
 }
 
 a {
-    color: inherit;
     padding: 0 0.2em;
 }
 
 .website {
     display: none;
-}
-
-:focus {
-    outline: none;
-    background-color: var(--light-base07);
-    color: var(--light-background);
 }
 
 body.index {
@@ -172,18 +159,8 @@ section .title {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-background);
-        color: var(--dark-foreground);
-    }
-
     h2 {
         color: var(--dark-base0A);
-    }
-
-    :focus {
-        background-color: var(--dark-base07);
-        color: var(--dark-background);
     }
 
     h3 {
