@@ -59,6 +59,11 @@ summary:focus {
     color: var(--light-background);
 }
 
+::selection {
+    background-color: var(--light-foreground);
+    color: var(--light-background);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-background);
@@ -68,6 +73,11 @@ summary:focus {
     a:focus,
     summary:focus {
         background-color: var(--dark-base07);
+        color: var(--dark-background);
+    }
+
+    ::selection {
+        background-color: var(--dark-foreground);
         color: var(--dark-background);
     }
 }
