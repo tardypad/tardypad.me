@@ -54,7 +54,7 @@ a {
 
 a:focus,
 summary:focus {
-    outline: none;
+    outline-style: none;
     background-color: var(--light-base07);
     color: var(--light-background);
 }
