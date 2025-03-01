@@ -22,7 +22,7 @@ install:
 	cp nginx.conf $(DESTDIR)/etc/nginx/http.d/main.conf
 
 watch:
-	find root/ src/ -type f | entr -c make
+	find -L root/ -type f | entr -c make
 
 deploy:
 	rsync -azL --delete root/ chestnut:/srv/http/main/
