@@ -55,7 +55,7 @@ a {
 a:focus,
 summary:focus {
     outline-style: none;
-    background-color: var(--light-base07);
+    background-color: var(--light-base0B);
     color: var(--light-background);
 }
 
@@ -72,7 +72,7 @@ summary:focus {
 
     a:focus,
     summary:focus {
-        background-color: var(--dark-base07);
+        background-color: var(--dark-base0B);
         color: var(--dark-background);
     }
 
