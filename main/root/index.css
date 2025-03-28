@@ -1,0 +1,43 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    fill: currentColor;
+}
+
+a {
+    padding: 0 0.2em;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main svg {
+    width: 50vmin;
+    height: 50vmin;
+    max-width: 20em;
+    max-height: 20em;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0.2em 0.5em;
+    font-size: 1.5em;
+}
