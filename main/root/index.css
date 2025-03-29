@@ -28,6 +28,28 @@ nav {
 nav a {
     font-size: 1.5em;
     padding: 0 0.2em;
+    white-space: nowrap;
+    text-decoration: none;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.2em;
+    border-color: transparent;
+}
+
+nav a:hover {
+    border-bottom-color: var(--light-base0B);
+}
+
+nav a.external::after {
+    content: "↗";
+    margin-left: 0.2em;
+    display: inline-block;
+    width: 0.6em;
+    font-size: 0.8em;
+}
+
+nav a.external:focus::after {
+    color: var(--light-background);
 }
 
 @media screen and (max-width: 30em) {
@@ -39,5 +61,15 @@ nav a {
     main svg {
         width: 6em;
         height: 6.7em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    nav a:hover {
+        border-bottom-color: var(--dark-base0B);
+    }
+
+    nav a.external:focus::after {
+        color: var(--dark-background);
     }
 }
