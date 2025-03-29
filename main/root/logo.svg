@@ -1,8 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" display="none">
     <defs>
-        <symbol id="logo" viewBox="-150 -150 300 300">
-            <path transform="translate(-15, -5)"
-                  d="M 0 0
+        <symbol id="logo" viewBox="-61.80339887 -80.90169944 161.8033989 180.90169944">
+            <path d="M 0 0
                      A 30.90169944 30.90169944 0 0 1 61.80339887 0
                      A 80.90169944 80.90169944 0 0 1 -61.80339887 68.71214994
                      L -61.80339887 78.61513778
