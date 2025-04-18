@@ -1,6 +1,6 @@
 build:
 	mkdir -p build
-	sed -e '/logo.svg/ {r root/logo.svg' -e 'd }' root/index.html > build/index.html
+	cp root/index.html build/index.html
 	sed -e '/resume_header.html/ {r root/includes/resume_header.html' -e 'd }' \
 		-e '/resume_about.html/ {r root/includes/resume_about.html' -e 'd }' \
 		-e '/resume_education.html/ {r root/includes/resume_education.html' -e 'd }' \
@@ -13,6 +13,7 @@ build:
 		-e '/resume_crisp.html/ {r root/includes/resume_crisp.html' -e 'd }' \
 		root/resume.html > build/resume.html
 	cp root/base.css root/index.css root/resume.css build/
+	cp root/symbols.svg build/
 	ln -sf resume.html build/resume
 
 install:
