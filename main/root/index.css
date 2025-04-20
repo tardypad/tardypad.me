@@ -2,33 +2,34 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .deco {
     border-color: var(--light-base0B);
-    border-left-style: solid;
-    border-left-width: 4vw;
-    border-right-style: solid;
-    border-right-width: 0.5vw;
+    border-top-style: solid;
+    border-top-width: 4vh;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5vh;
 }
 
 .deco::before {
     content: "";
     display: block;
-    width: 1.5vw;
-    height: 100vh;
+    width: 100vw;
+    height: 1.5vh;
     background-color: var(--light-base0B);
-    mask-image: url("symbols.svg#vertical-motif");
-    mask-size: 1.2vw 0.877512698vw ; /* 1.2 * 24.863281 / 34.000576 */
-    mask-repeat: repeat-y;
+    mask-image: url("symbols.svg#horizontal-motif");
+    mask-size: 0.877512698vh 1.2vh; /* 1.2 * 24.863281 / 34.000576 */
+    mask-repeat: repeat-x;
     mask-position: center;
 }
 
 body::after {
     content: "";
-    width: 6vw;
-    height: 100vh;
+    width: 100vw;
+    height: 6vh;
 }
 
 main {
@@ -36,12 +37,14 @@ main {
     display: flex;
     gap: 2em;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main svg {
     fill: currentColor;
-    width: 12em;
-    height: 13.4em;
+    width: 6em;
+    height: 6.7em;
 }
 
 nav {
@@ -78,43 +81,43 @@ nav a.external:focus::after {
     color: var(--light-background);
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (min-width: 40em) {
     body {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .deco {
-        border-left-style: unset;
-        border-left-width: unset;
-        border-right-style: unset;
-        border-right-width: unset;
-        border-top-style: solid;
-        border-top-width: 4vh;
-        border-bottom-style: solid;
-        border-bottom-width: 0.5vh;
+        border-top-style: unset;
+        border-top-width: unset;
+        border-bottom-style: unset;
+        border-bottom-width: unset;
+        border-left-style: solid;
+        border-left-width: 4vw;
+        border-right-style: solid;
+        border-right-width: 0.5vw;
     }
 
     .deco::before {
-        width: 100vw;
-        height: 1.5vh;
-        mask-image: url("symbols.svg#horizontal-motif");
-        mask-size: 0.877512698vh 1.2vh; /* 1.2 * 24.863281 / 34.000576 */
-        mask-repeat: repeat-x;
+        width: 1.5vw;
+        height: 100vh;
+        mask-image: url("symbols.svg#vertical-motif");
+        mask-size: 1.2vw 0.877512698vw ; /* 1.2 * 24.863281 / 34.000576 */
+        mask-repeat: repeat-y;
     }
 
     body::after {
-        width: 100vw;
-        height: 6vh;
+        width: 6vw;
+        height: 100vh;
     }
 
     main {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     main svg {
-        width: 6em;
-        height: 6.7em;
+        width: 12em;
+        height: 13.4em;
     }
 }
 
