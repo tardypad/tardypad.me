@@ -17,7 +17,7 @@ body {
 .deco::before {
     content: "";
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 1.5vh;
     background-color: var(--light-base0B);
     mask-image: url("symbols.svg#horizontal-motif");
@@ -28,7 +28,7 @@ body {
 
 body::after {
     content: "";
-    width: 100vw;
+    width: 100%;
     height: 6vh;
 }
 
@@ -98,7 +98,7 @@ nav a.external:focus::after {
 
     .deco::before {
         width: 1.5vw;
-        height: 100vh;
+        height: 100%;
         mask-image: url("symbols.svg#vertical-motif");
         mask-size: 1.2vw 0.877512698vw ; /* 1.2 * 24.863281 / 34.000576 */
         mask-repeat: repeat-y;
@@ -106,7 +106,7 @@ nav a.external:focus::after {
 
     body::after {
         width: 6vw;
-        height: 100vh;
+        height: 100%;
     }
 
     main {
