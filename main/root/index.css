@@ -5,20 +5,29 @@ body {
     justify-content: space-between;
 }
 
-body::before {
-    content: "";
+.deco {
     border-color: var(--light-base0B);
-    width: 0.2vw;
-    height: 100vh;
     border-left-style: solid;
-    border-left-width: 5vw;
+    border-left-width: 4vw;
     border-right-style: solid;
     border-right-width: 0.5vw;
 }
 
+.deco::before {
+    content: "";
+    display: block;
+    width: 1.5vw;
+    height: 100vh;
+    background-color: var(--light-base0B);
+    mask-image: url("symbols.svg#vertical-motif");
+    mask-size: 1.2vw 0.877512698vw ; /* 1.2 * 24.863281 / 34.000576 */
+    mask-repeat: repeat-y;
+    mask-position: center;
+}
+
 body::after {
     content: "";
-    width: 5.7vw;
+    width: 6vw;
     height: 100vh;
 }
 
@@ -74,24 +83,29 @@ nav a.external:focus::after {
         flex-direction: column;
     }
 
-    body::before {
-        width: 100vw;
-        height: 0.2vh;
+    .deco {
         border-left-style: unset;
         border-left-width: unset;
         border-right-style: unset;
         border-right-width: unset;
         border-top-style: solid;
-        border-top-width: 5vh;
+        border-top-width: 4vh;
         border-bottom-style: solid;
         border-bottom-width: 0.5vh;
     }
 
-    body::after {
+    .deco::before {
         width: 100vw;
-        height: 5.7vh;
+        height: 1.5vh;
+        mask-image: url("symbols.svg#horizontal-motif");
+        mask-size: 0.877512698vh 1.2vh; /* 1.2 * 24.863281 / 34.000576 */
+        mask-repeat: repeat-x;
     }
 
+    body::after {
+        width: 100vw;
+        height: 6vh;
+    }
 
     main {
         flex-direction: column;
@@ -105,8 +119,12 @@ nav a.external:focus::after {
 }
 
 @media (prefers-color-scheme: dark) {
-    body::before {
+    .deco {
         border-color: var(--dark-base0B);
+    }
+
+    .deco::before {
+        background-color: var(--dark-base0B);
     }
 
     nav a:hover {
