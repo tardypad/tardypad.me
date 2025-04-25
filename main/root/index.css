@@ -1,3 +1,10 @@
+:root {
+    --light-base0B-00: #1b779300;
+    --light-base0B-ff: #1b7793ff;
+    --dark-base0B-00: #81c3dd00;
+    --dark-base0B-ff: #81c3ddff;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -64,8 +71,15 @@ nav a {
     border-color: transparent;
 }
 
+@keyframes border-opacity-light {
+    from { border-bottom-color: var(--light-base0B-00) }
+    to { border-bottom-color: var(--light-base0B-ff); }
+}
+
 nav a:hover {
-    border-bottom-color: var(--light-base0B);
+    animation-name: border-opacity-light;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 nav a.external::after {
@@ -128,8 +142,13 @@ nav a.external:focus::after {
         background-color: var(--dark-base0B);
     }
 
+    @keyframes border-opacity-dark {
+        from { border-bottom-color: var(--dark-base0B-00) }
+        to { border-bottom-color: var(--dark-base0B-ff); }
+    }
+
     nav a:hover {
-        border-bottom-color: var(--dark-base0B);
+        animation-name: border-opacity-dark;
     }
 
     nav a.external:focus::after {
