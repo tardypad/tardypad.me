@@ -14,29 +14,46 @@ body {
 }
 
 .deco {
-    border-color: var(--light-base0B);
-    border-top-style: solid;
-    border-top-width: 4vh;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5vh;
+    margin-top: 4vh;
+    background-color: var(--light-base0B);
+    position: relative;
+}
+
+.deco .pattern {
+    width: 100%;
+    height: 6vh;
+    background-image: url("symbols.svg#motif");
+    filter: opacity(5%);
 }
 
 .deco::before {
     content: "";
     display: block;
+    position: absolute;
+    top: 10%;
+    left: 0;
     width: 100%;
-    height: 1.5vh;
-    background-color: var(--light-base0B);
-    mask-image: url("symbols.svg#horizontal-motif");
-    mask-size: 0.877512698vh 1.2vh; /* 1.2 * 24.863281 / 34.000576 */
-    mask-repeat: repeat-x;
-    mask-position: center;
+    height: 3%;
+    background-color: white;
+    z-index: 1;
+}
+
+.deco::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 3%;
+    background-color: white;
+    z-index: 1;
 }
 
 body::after {
     content: "";
     width: 100%;
-    height: 6vh;
+    height: 10vh;
 }
 
 main {
@@ -100,26 +117,33 @@ nav a.external:focus::after {
     }
 
     .deco {
-        border-top-style: unset;
-        border-top-width: unset;
-        border-bottom-style: unset;
-        border-bottom-width: unset;
-        border-left-style: solid;
-        border-left-width: 4vw;
-        border-right-style: solid;
-        border-right-width: 0.5vw;
+        margin-top: unset;
+        margin-left: 4vw;
+    }
+
+    .deco .pattern {
+        width: 6vw;
+        height: 100%;
     }
 
     .deco::before {
-        width: 1.5vw;
+        top: 0;
+        left: 10%;
+        width: 3%;
         height: 100%;
-        mask-image: url("symbols.svg#vertical-motif");
-        mask-size: 1.2vw 0.877512698vw ; /* 1.2 * 24.863281 / 34.000576 */
-        mask-repeat: repeat-y;
+    }
+
+    .deco::after {
+        bottom: unset;
+        left: unset;
+        top: 0;
+        right: 10%;
+        width: 3%;
+        height: 100%;
     }
 
     body::after {
-        width: 6vw;
+        width: 10vw;
         height: 100%;
     }
 
@@ -135,10 +159,6 @@ nav a.external:focus::after {
 
 @media (prefers-color-scheme: dark) {
     .deco {
-        border-color: var(--dark-base0B);
-    }
-
-    .deco::before {
         background-color: var(--dark-base0B);
     }
 
