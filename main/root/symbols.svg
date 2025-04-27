@@ -66,5 +66,5 @@
         <rect id="stroke-pattern-rect" width="100%" height="100%" fill="url(#stroke-pattern)"/>
     </defs>
     <!-- cannot use a symbol in background-image, alse see <style> above -->
-    <use id="motif" href="#stroke-pattern-rect" />
+    <use id="ribbon-pattern" href="#stroke-pattern-rect" />
 </svg>
