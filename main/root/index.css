@@ -89,15 +89,19 @@ nav a:hover {
 }
 
 nav a.external::after {
-    content: "↗";
+    content: "";
+    mask-image: url("symbols.svg#external-link");
+    mask-repeat: no-repeat;
+    background-color: var(--light-foreground);
     margin-left: 0.2em;
     display: inline-block;
-    width: 0.6em;
-    font-size: 0.8em;
+    width: 0.5em;
+    height: 0.5em;
 }
 
 nav a.external:focus::after {
     color: var(--light-background);
+    background-color: var(--light-background);
 }
 
 @media screen and (min-width: 40em) {
@@ -149,7 +153,12 @@ nav a.external:focus::after {
         animation-name: border-opacity-dark;
     }
 
+    nav a.external::after {
+        background-color: var(--dark-foreground);
+    }
+
     nav a.external:focus::after {
         color: var(--dark-background);
+        background-color: var(--dark-background);
     }
 }
