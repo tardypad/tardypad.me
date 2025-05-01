@@ -53,9 +53,10 @@ main {
 }
 
 main svg {
+    --logo-width: 6em;
     fill: currentColor;
-    width: 6em;
-    height: 6.7em;
+    width: var(--logo-width);
+    height: calc(var(--logo-width) * 180.9 / 161.8);
 }
 
 nav {
@@ -129,8 +130,7 @@ nav a.external:focus::after {
     }
 
     main svg {
-        width: 12em;
-        height: 13.4em;
+        --logo-width: 12em;
     }
 }
 
