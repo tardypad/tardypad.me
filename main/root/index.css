@@ -12,6 +12,8 @@
     --vertical-ribbon-margin: 4vw;
     --vertical-ribbon-width: 6vw;
     --vertical-ribbon-edge-width: 0.4vw;
+
+    --link-gap: 0.3em;
 }
 
 body {
@@ -68,7 +70,7 @@ nav {
 
 nav a {
     font-size: 1.5em;
-    padding: 0 0.2em;
+    padding: 0 var(--link-gap);
     white-space: nowrap;
     text-decoration: none;
     border-top-style: solid;
@@ -93,7 +95,7 @@ nav a.external::after {
     mask-image: url("symbols.svg#external-link");
     mask-repeat: no-repeat;
     background-color: var(--light-foreground);
-    margin-left: 0.2em;
+    margin-left: var(--link-gap);
     display: inline-block;
     width: 0.5em;
     height: 0.5em;
