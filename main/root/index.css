@@ -7,9 +7,9 @@
     --dark-base0B-ff: #81c3ddff;
 
     --horizontal-ribbon-margin: 2vh;
-    --horizontal-ribbon-width: 6vh;
-    --horizontal-ribbon-min-width: 60px;
-    --horizontal-ribbon-edge-width: 0.4vh;
+    --horizontal-ribbon-height: 6vh;
+    --horizontal-ribbon-min-height: 60px;
+    --horizontal-ribbon-edge-height: 0.4vh;
     --vertical-ribbon-margin: 2vw;
     --vertical-ribbon-width: 6vw;
     --vertical-ribbon-min-width: 100px;
@@ -32,15 +32,15 @@ body {
     margin-bottom: var(--horizontal-ribbon-margin);
     background-color: var(--light-base0B);
     border-color: var(--light-base0B-lighter);
-    border-width: var(--horizontal-ribbon-edge-width);
+    border-width: var(--horizontal-ribbon-edge-height);
     border-top-style: solid;
     border-bottom-style: solid;
 }
 
 .ribbon .pattern {
     width: 100%;
-    height: var(--horizontal-ribbon-width);
-    min-height: var(--horizontal-ribbon-min-width);
+    height: var(--horizontal-ribbon-height);
+    min-height: var(--horizontal-ribbon-min-height);
     background-image: url("symbols.svg#ribbon-pattern");
     filter: opacity(5%);
 }
@@ -48,8 +48,8 @@ body {
 body::after {
     content: "";
     width: 100%;
-    height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-width) + 2*var(--horizontal-ribbon-edge-width));
-    min-height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-min-width) + 2*var(--horizontal-ribbon-edge-width));
+    height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-height) + 2*var(--horizontal-ribbon-edge-height));
+    min-height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-min-height) + 2*var(--horizontal-ribbon-edge-height));
 }
 
 main {
