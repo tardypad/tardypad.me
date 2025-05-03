@@ -6,11 +6,13 @@
     --dark-base0B-00: #81c3dd00;
     --dark-base0B-ff: #81c3ddff;
 
-    --horizontal-ribbon-margin: 4vh;
+    --horizontal-ribbon-margin: 2vh;
     --horizontal-ribbon-width: 6vh;
+    --horizontal-ribbon-min-width: 60px;
     --horizontal-ribbon-edge-width: 0.4vh;
-    --vertical-ribbon-margin: 4vw;
+    --vertical-ribbon-margin: 2vw;
     --vertical-ribbon-width: 6vw;
+    --vertical-ribbon-min-width: 100px;
     --vertical-ribbon-edge-width: 0.4vw;
 
     --link-gap: 0.3em;
@@ -26,6 +28,7 @@ body {
 
 .ribbon {
     margin-top: var(--horizontal-ribbon-margin);
+    margin-bottom: var(--horizontal-ribbon-margin);
     background-color: var(--light-base0B);
     border-color: var(--light-base0B-lighter);
     border-width: var(--horizontal-ribbon-edge-width);
@@ -36,6 +39,7 @@ body {
 .ribbon .pattern {
     width: 100%;
     height: var(--horizontal-ribbon-width);
+    min-height: var(--horizontal-ribbon-min-width);
     background-image: url("symbols.svg#ribbon-pattern");
     filter: opacity(5%);
 }
@@ -43,7 +47,8 @@ body {
 body::after {
     content: "";
     width: 100%;
-    height: calc(var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-width) + 2*var(--horizontal-ribbon-edge-width));
+    height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-width) + 2*var(--horizontal-ribbon-edge-width));
+    min-height: calc(2*var(--horizontal-ribbon-margin) + var(--horizontal-ribbon-min-width) + 2*var(--horizontal-ribbon-edge-width));
 }
 
 main {
@@ -106,14 +111,16 @@ nav a.external:focus::after {
     background-color: var(--light-background);
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
     body {
         flex-direction: row;
     }
 
     .ribbon {
         margin-top: unset;
+        margin-bottom: unset;
         margin-left: var(--vertical-ribbon-margin);
+        margin-right: var(--vertical-ribbon-margin);
         border-width: var(--vertical-ribbon-edge-width);
         border-top-style: unset;
         border-bottom-style: unset;
@@ -124,11 +131,13 @@ nav a.external:focus::after {
     .ribbon .pattern {
         width: var(--vertical-ribbon-width);
         height: 100%;
+        min-width: var(--vertical-ribbon-min-width);
     }
 
     body::after {
-        width: calc(var(--vertical-ribbon-margin) + var(--vertical-ribbon-width) + 2*var(--vertical-ribbon-edge-width));
+        width: calc(2*var(--vertical-ribbon-margin) + var(--vertical-ribbon-width) + 2*var(--vertical-ribbon-edge-width));
         height: 100%;
+        min-width: calc(2*var(--vertical-ribbon-margin) + var(--vertical-ribbon-min-width) + 2*var(--vertical-ribbon-edge-width));
     }
 
     main {
